@@ -245,3 +245,61 @@ article .resumoArtigo{
     line-height: 19px;
     margin-bottom: 30px;
 }
+/*-----------------------*/
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+
+.cardsFooter{
+    display: flex;
+    width: 100%;
+}
+.cardsFooter .tituloCardFt{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.cardsFooter .textCardFt{
+    font-size: 14px;
+    font-weight: 400;
+}
+#cardFt1,#cardFt2,#cardFt3{
+    flex:1;
+    display: flex;
+flex-direction: column;
+    color:#fff;
+    padding: 20px;
+}
+#cardFt1{
+    background-color: #39aae1;
+}
+#cardFt2{
+    background-color: #0079c7;
+}#cardFt3{
+    background-color: #2b4c99;
+}
+
+.areaFooter{
+    display: flex;
+    width: 100%;
+}
+#areaFt1,#areaFt2,#areaFt3{
+    flex: 1;
+    color: #fff;
+
+}
+footer .boxTituloCp span{
+    color: #fff;
+}
+footer #footerCreditos{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    color: #5c5c5c;
+    line-height: 40px;
+    font-size: 12px;
+    margin-top: 30px;
+}

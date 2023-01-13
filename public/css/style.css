@@ -228,11 +228,15 @@ nav a {
 
 #descMake {
     border-bottom: 1px solid #cecdcd;
+    width: 100%;
 }
 
 #descMake p {
     margin-bottom: 16px;
     font-size: 16px;
+}
+.containerWidget{
+    padding: 20px;
 }
 
 

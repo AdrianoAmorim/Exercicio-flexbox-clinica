@@ -1,103 +1,124 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     height: 120px;
 }
-.container{
+
+.container {
     width: 990px;
     display: flex;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
 }
-.ativo a, nav a:hover{
+
+.ativo a,
+nav a:hover {
     background-color: #39aae1;
-    color:#fff;
+    color: #fff;
 }
-nav ul{
+
+nav ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
 }
-nav a{
+
+nav a {
     display: block;
     text-decoration: none;
     padding: 15px;
     text-transform: uppercase;
-    color:#727272;
+    color: #727272;
 }
+
 /*---------------------------*/
 /*BANNER CENTRAL*/
-.column{
+.column {
     flex-direction: column;
 }
-#banner{
+
+#banner {
     display: flex;
     justify-content: center;
     background-image: url("../img/img1.jpg");
     background-position: center;
     background-size: cover;
-    height: 670px;
+    height: 100%;
 }
-#banner .textoBanner{
+
+#banner .textoBanner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    padding-left: 5px;
 }
-#banner .textoBanner h1{
+
+#banner .textoBanner h1 {
     color: #fff;
     font-size: 70px;
     text-shadow: 0 2px 0 #252525;
     max-width: 350px;
 }
-#banner .textoBanner h2{
+
+#banner .textoBanner h2 {
     color: #fff;
     font-size: 22px;
     text-shadow: 0 1px 0 #252525;
     max-width: 330px;
     margin-top: 30px;
 }
-#banner .cardsBanner{
+
+#banner .cardsBanner {
     display: flex;
     background-color: brown;
     height: 210px;
 }
-.card{
+
+.card {
     flex: 1;
     color: #fff;
     padding: 20px;
 }
-.tituloCard{
+
+.tituloCard {
     font-size: 22px;
 }
-.descCard{
+
+.descCard {
     font-size: 14px;
     margin: 20px 0;
-   
+
 }
-.btnCard{
+
+.btnCard {
     border: 2px solid #fff;
     text-decoration: none;
     padding: 8px;
     margin-top: 5px;
     font-size: 12px;
-    color:#fff;
+    color: #fff;
 }
-.descCard3{
+
+.descCard3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,46 +127,54 @@ nav a{
 
 }
 
-#card1{
+#card1 {
     background-color: #39aae1;
 }
-#card2{
+
+#card2 {
     background-color: #0079c7;
-}#card3{
+}
+
+#card3 {
     background-color: #2b4c99;
 }
+
 /*------------------------------------------------*/
 /*ASIDE*/
 /*TITULOS DO BOX PRINCIPAL*/
-.boxTituloCp{
+.boxTituloCp {
     display: flex;
     flex-direction: column;
     justify-content: start;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.boxTituloCp span{
+
+.boxTituloCp span {
     color: #000;
     font-size: 20px;
     font-weight: bold;
 }
-.barraTituloCp{
+
+.barraTituloCp {
     width: 50px;
     height: 2px;
     background-color: #36a9e1;
     margin-top: 10px;
 }
+
 /*---------------------------------------------------*/
 /*CONTEUDO PRINCIPAL DO SITE*/
-#conteudoPrincipal{
+#conteudoPrincipal {
     display: flex;
     justify-content: center;
 }
-#conteudoPrincipal #boxArtigos{
+
+#conteudoPrincipal #boxArtigos {
     flex: 2;
 }
 
-#conteudoPrincipal aside{
+#conteudoPrincipal aside {
     flex: 1;
 }
 
@@ -154,152 +183,256 @@ nav a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.boxConteudoWidget .blocos{
+
+.boxConteudoWidget .blocos {
     width: 150px;
     height: 130px;
-    background-color:  #36a9e1;
+    background-color: #36a9e1;
     margin-bottom: 30px;
 }
-#containerContato{
+
+#containerContato {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
 }
-.boxContato{
+
+.boxContato {
     display: flex;
     justify-content: start;
     align-items: center;
     border-bottom: 1px solid #cecdcd;
     padding: 6px 0;
 }
-.boxContato span,.boxContato strong{
+
+.boxContato span,
+.boxContato strong {
     font-size: 14px;
 }
-.boxContato .iconContato{
+
+.iconContato {
     background-color: #727272;
     width: 30px;
     padding: 5px;
     margin-right: 9px;
 }
-.iconContato img{
+
+.iconContato img {
     width: 100%;
 }
-.boxContato span a{
+
+.boxContato span a {
     text-decoration: none;
 }
-#descMake{
+
+#descMake {
     border-bottom: 1px solid #cecdcd;
 }
-#descMake p{
+
+#descMake p {
     margin-bottom: 16px;
     font-size: 16px;
 }
 
 
 /*SECAO DOS ARTIGOS*/
-#boxConteudoArtigos{
+#boxConteudoArtigos {
     display: flex;
     flex-wrap: wrap;
 }
-article{
-    flex: 1;    
+
+article {
+    flex: 1;
     min-width: 300px;
     margin-right: 10px;
 }
-article a{
+
+article a {
     text-decoration: none;
 }
-article .boxDataArtigo{
+
+article .boxDataArtigo {
     display: flex;
 }
-article .dataArtigo{
+
+article .dataArtigo {
     background-color: #2b4c99;
     color: #fff;
     font-size: 12px;
     padding: 10px;
     margin-right: 2px;
 }
-article .comentArtigo{
+
+article .comentArtigo {
     background-color: #39aae1;
     color: #fff;
     font-size: 12px;
     padding: 10px;
 }
-article .thumbnail_artigo{
+
+article .thumbnail_artigo {
     margin-top: 30px;
 }
-article .thumbnail_artigo img{
+
+article .thumbnail_artigo img {
     width: 100%;
     height: auto;
 }
-article .tituloArtigo{
+
+article .tituloArtigo {
     margin: 25px 0;
     font-size: 22px;
     font-weight: bold;
-    color:#000;
+    color: #000;
 }
-article .resumoArtigo{
+
+article .resumoArtigo {
     font-size: 14px;
     color: #5c5c5c;
     line-height: 19px;
     margin-bottom: 30px;
 }
+
 /*-----------------------*/
 /*FOOTER*/
-footer{
+footer {
     display: flex;
     justify-content: center;
     background-color: #1e1e1e;
 }
 
-.cardsFooter{
+.cardsFooter {
     display: flex;
     width: 100%;
 }
-.cardsFooter .tituloCardFt{
+
+.cardsFooter .tituloCardFt {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 15px;
 }
-.cardsFooter .textCardFt{
+
+.cardsFooter .textCardFt {
     font-size: 14px;
     font-weight: 400;
 }
-#cardFt1,#cardFt2,#cardFt3{
-    flex:1;
+
+#cardFt1,
+#cardFt2,
+#cardFt3 {
+    flex: 1;
     display: flex;
-flex-direction: column;
-    color:#fff;
+    flex-direction: column;
+    color: #fff;
     padding: 20px;
 }
-#cardFt1{
+
+#cardFt1 {
     background-color: #39aae1;
 }
-#cardFt2{
+
+#cardFt2 {
     background-color: #0079c7;
-}#cardFt3{
+}
+
+#cardFt3 {
     background-color: #2b4c99;
 }
 
-.areaFooter{
+.areaFooter {
     display: flex;
     width: 100%;
 }
-#areaFt1,#areaFt2,#areaFt3{
+
+.boxConteudoFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxConteudoFooter .textConteudoFt {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.boxConteudoFooter .textConteudoFt a {
+    font-size: 12px;
+    color: #0079c7;
+    text-decoration: none;
+
+}
+
+#areaFt1,
+#areaFt2,
+#areaFt3 {
     flex: 1;
     color: #fff;
 
 }
-footer .boxTituloCp span{
+
+footer .boxTituloCp span {
     color: #fff;
 }
-footer #footerCreditos{
+
+footer #footerCreditos {
     border-top: 1px solid #2c2c2c;
     height: 40px;
     color: #5c5c5c;
     line-height: 40px;
     font-size: 12px;
     margin-top: 30px;
+    margin-left: 10px;
+}
+
+footer #areaFt3,
+#areaFt1 .textConteudoFt p {
+    color: #949494;
+}
+
+footer #areaFt1 .flexRow p {
+    flex: 1;
+    padding-right: 15px;
+    align-self: end;
+}
+
+footer #areaFt1 .flexRow a {
+    color: #fff;
+}
+
+.flexRow {
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    #banner .textoBanner {
+        padding: 20px;
+    }
+
+    #banner .textoBanner h1 {
+        font-size: 50px;
+    }
+
+    #banner .textoBanner h2 {
+        font-size: 20px;
+    }
+
+    #banner .cardsBanner {
+        flex-direction: column;
+        height: auto;
+    }
+    #banner.container,#conteudoPrincipal .container{
+        flex-direction: column;
+    }
+    #conteudoPrincipal #boxArtigos,#conteudoPrincipal aside{
+        padding: 20px;
+    }
+    .cardsFooter,.areaFooter{
+        flex-direction: column;
+    }
+    .areaFooter{
+        padding: 20px;
+    }
 }

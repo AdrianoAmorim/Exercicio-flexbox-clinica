@@ -1,27 +1,42 @@
+/*CONFIG GLOBAIS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
 }
-
+/*--------------------------------*/
+/*CABECALHO*/
 header {
     display: flex;
     justify-content: center;
     height: 120px;
 }
-
+/*-----------------------------*/
+/*CLASSES */
 .container {
     width: 990px;
     display: flex;
     justify-content: space-between;
 }
 
+/*MENU*/
 .logo {
     display: flex;
     align-items: center;
 }
-
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.menuMobile .linhasMenuM{
+    height: 3px;
+    background-color: #39aae1;
+}
 .menu {
     display: flex;
     align-items: center;
@@ -409,8 +424,28 @@ footer #areaFt1 .flexRow a {
 .flexRow {
     display: flex;
 }
-
-@media (max-width: 700px) {
+/*RESPONSIVIDADE*/
+@media (max-width: 740px) {
+    header{
+        height: auto;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        display:none;
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+       
+    }
     #banner .textoBanner {
         padding: 20px;
     }

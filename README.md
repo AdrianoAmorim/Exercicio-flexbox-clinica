@@ -1,2 +1,3 @@
 # Exercicio-flexbox-clinica
-Site de uma Clinica para Treinamento da tecnologia flexbox css.
+### Exercico dado pelo curso b7Web, para treinamento e fixação do aprendizado do flexbox 
+### e responsividade com @media

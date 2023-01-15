@@ -9,3 +9,11 @@ var abrirMenu = function () {
     }
 };
 btnMenu.addEventListener("click", abrirMenu);
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 740) {
+        menu.style.display = "flex";
+    }
+    else {
+        menu.style.display = "none";
+    }
+});
